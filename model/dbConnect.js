@@ -33,4 +33,5 @@ const sequelize = new Sequelize(
     })
     
     db.student = require('./StudentModel.js')(sequelize, DataTypes)
+    db.course = require( './CourseModel.js' )(sequelize, DataTypes);
     module.exports = db;
